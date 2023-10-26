@@ -1,0 +1,27 @@
+
+//UTILITIES
+@import "./utilities/variables";
+@import "./utilities/animista/animaciones";
+@import "./utilities/mixings";
+//BASE
+@import "./base/reset";
+//LAYOUTS
+@import "./layout/navbar";
+@import "./layout/banner";
+@import "./layout/cuando";
+@import "./layout/que_hacemos";
+@import "./layout/valoraciones";
+@import "./layout/galeria_index";
+@import "./layout/faq";
+@import "./layout/footer";
+@import "./layout/nosotros";
+@import "./layout/galeria";
+@import"./layout/contacto";
+@import "./layout/servicios";
+
+//MEDIA
+
+@import "./media/media768";
+@import "./media/media600";
+@import "./media/media425";
+

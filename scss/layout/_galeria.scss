@@ -1,0 +1,25 @@
+.galeria{
+    font-family: $font-main;
+    margin-bottom: 30px;
+    h1{
+        text-align: center;
+    }
+    .fila{
+        @include flex (row,wrap,center,none);
+
+        figure{
+            margin: 20px;
+            width: 300px;
+            img{
+                width: 100%;
+                transition-duration: 0.5s;
+                &:hover{
+                    box-shadow: 0px 0px 5px $color-principal;
+                    border-radius: 10px;
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+

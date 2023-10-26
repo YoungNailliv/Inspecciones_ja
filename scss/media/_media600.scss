@@ -1,0 +1,38 @@
+@media only screen and (max-width:660px){
+    .foto_carrusel{
+        h3{
+            font-size: 30px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+    .nosotros{
+        img{
+            max-width: 100%;
+        }
+        article{
+            @include flex(row,nowrap,none,none);
+        }
+        .contenedor_nosotros{
+            flex-direction: row;
+            flex-wrap: wrap;
+            .texto_nosotros{
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+        }
+    }
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 1.25rem;
+        .info_footer{
+            ul{
+                text-align: center;
+            }
+        }
+    }
+
+}

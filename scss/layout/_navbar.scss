@@ -1,0 +1,33 @@
+.navbar{
+    width: 100%;
+    div{
+        a{
+            @include flex(row,nowrap,center,center);
+            img{
+                width: 4.6875rem;
+            }
+        }
+        font-family: $font-main;
+        @include flex(row,nowrap,space-between,none);
+        .links_navbar{
+            justify-content: flex-end;
+            text-align: end;
+            ul{
+                li{
+                    a{
+                        color: $color-principal;
+                        transition-duration: 0.5s;
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.nav-link{
+    transition-duration: 0.5s;
+}

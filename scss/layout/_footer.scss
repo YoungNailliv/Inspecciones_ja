@@ -1,0 +1,49 @@
+footer{
+    background-color: $color-cuatro;
+    font-family: $font-main;
+    height: 100%;
+    @include flex(row,wrap,space-around,center);
+
+    .logo_footer{
+        img{
+            width: 200px;
+        }
+    }
+}
+
+.info_footer{
+    ul{
+        list-style: none;
+        text-align: start;
+        padding: 0;
+        li{
+            padding-left: 0;
+        }
+    }
+    .rrss_container{
+        display: flex;
+        justify-content: center;
+        gap: 1.25rem;
+        
+    }
+}
+
+.rrss_footer{
+    width: 20px;
+}
+
+.map_footer{
+
+    ul{
+        list-style: none;
+        padding-left: 0;
+        li{
+            padding-bottom: 5px;
+            a{
+            text-decoration: none;
+            color: $color-principal;
+            cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@media only screen and (max-width:426px){   
+    .banner{
+        div{
+            height: auto;
+        }
+    }
+    
+    .foto_carrusel{
+        h3{
+            font-size: 28px;
+        }
+        p{
+            font-size: 16px;
+            color: $color-principal;
+        }
+    }
+    .logo_banner{
+        width: 50px;
+    }
+
+    .texto_carrusel{
+        h3{
+            font-size: 24px;
+        }
+    }
+
+    .boton{
+        padding: 6px;
+        font-size: 12px;
+        @include margin(0px,5px,0px,5px);
+    }
+    .boton_cotizacion{
+        @extend .boton;
+        margin-top: 10px;
+        @include padding(0px,50px,0px,50px);
+            
+    }
+    .card_hacemos{
+        @include margin(10px,0px,10px,0px);
+    }
+
+    .acordeon{
+        width: 100%;
+        
+    }
+
+
+}

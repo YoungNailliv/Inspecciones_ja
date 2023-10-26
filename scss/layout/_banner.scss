@@ -1,0 +1,68 @@
+.banner{
+    color:$color-principal;
+
+    div{
+        height: 400px;
+    }
+}
+.next{
+    color: $color-principal;
+}
+.foto_carrusel{
+    font-family: $font-main;
+    color: $color-principal;
+    
+    h3{
+        font-size: 48px;
+        color: $color-principal;
+        text-shadow: -1px 1px 0px $color-secundario;
+    }
+    p{
+        font-size: 24px;
+        color: $color-principal;
+        text-shadow: -1px 1px 2px $color-secundario;
+    }
+}
+
+.foto_banner{
+    filter: opacity(80%);
+}
+
+.boton{
+    background-color: $color-secundario;
+    transition-duration: 0.2s;
+    padding: 12px;
+    @include margin(0px,20px,0px,20px);
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px;
+    text-decoration: none;
+    color: $color-principal;
+    cursor: pointer;
+    
+    &:hover{
+        transform:scale(1.1);
+        box-shadow: 0px 0px 5px $color-principal;
+        border: none
+    }
+
+    
+}
+
+.boton_cotizacion{
+    @extend .boton;
+    @include flex(row,nowrap,center,center);
+    @include padding(0px,20px,0px,20px);        
+}
+
+.wsp{
+    background-color: rgba(18, 141, 18, 0.957);
+}
+
+.texto_carrusel{
+    h3{
+        font-weight: 700;
+
+    }
+}

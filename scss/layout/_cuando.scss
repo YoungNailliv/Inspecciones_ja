@@ -1,0 +1,46 @@
+.cuando_solicitar{
+    @include flex(column,wrap,none,center);
+    width: 100%;
+    margin-bottom: 10px;
+
+
+    h1{
+        margin-top: 10px;
+        font-family: $font-main;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+}
+
+.contenedor_hacemos{
+    margin-bottom: 40px;
+}
+.contenedor_cards{
+    @include flex(row,wrap,space-around,center);
+    width: 90%;
+    
+}
+
+.card{
+    margin-top: 20px;
+    transition-duration: 0.4s;
+    @include margin(40px,10px,40px,10px);
+    &:hover{
+        transform: scale(1.1);
+        box-shadow: 0px 0px 10px $color-principal;
+        border: none;
+    }
+}
+
+.card_cuando{
+    
+    h3{
+        font-family: $font-main;
+        color: $color-principal;
+        text-shadow: -1px 1px 0px $color-secundario;
+        font-weight: 700;
+        text-align: center;
+        
+    }
+}

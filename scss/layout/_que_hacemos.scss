@@ -1,0 +1,50 @@
+.que_hacemos{
+    @include flex (column,nowrap,center,center);
+    h1{
+        font-family: $font-main;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: 700;
+
+    }
+    .contenedor_hacemos{
+        margin-bottom: 50px;
+    }
+    
+}
+
+.card_hacemos{
+    @include flex(row,nowrap,center,center);
+    border: 5px solid $color-tres;
+    height: 180px;
+    
+    color: $color-tres;
+    font-weight: 700;
+    text-shadow: -1px 1px 0px $color-principal;
+    font-family: $font-main;
+    text-align: center;
+    
+}
+
+.card_hacemos_1{
+    background-image: url("../asset/img/griferia.jpg");
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../asset/img/griferia.jpg");
+}
+.card_hacemos_2{
+    @extend .card_hacemos_1;
+    background-image: url("../asset/img/pintura.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../asset/img/pintura.jpg");
+}
+.card_hacemos_3{
+    @extend .card_hacemos_1;
+    background-image: url("../asset/img/piso.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../asset/img/piso.jpg");
+}
+
+.card_hacemos_4{
+    @extend .card_hacemos_1;
+    background-image: url("../asset/img/electrico.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../asset/img/electrico.jpg");
+}

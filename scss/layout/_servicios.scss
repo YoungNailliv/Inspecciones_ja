@@ -1,0 +1,101 @@
+.main_servicios{
+    font-family: $font-main;
+    text-align: center;
+    p{
+        font-size: 20px;
+        @include margin(0px,10px,0px,10px);
+    }
+}
+
+.card_servicios{
+    width: 400px;
+    height: 200px;
+    margin: 0;
+    overflow: hidden;
+    @include flex(row,nowrap,center,center);
+    text-align: center;
+    color: $color-tres;
+    font-family: $font-main;
+    border: none;
+    @include margin(10px,0px,10px,0px);
+    div{
+        padding: 0px;
+        h5{
+            text-align: center;
+            @include margin(0px,10px,0px,10px);
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    &:hover{
+        box-shadow: 0px 0px 5px $color-principal;
+        transform: none;
+    }
+    .icono_servicio{
+        margin-left: 5px;
+    }
+}
+
+.contenedor_card_servicios{
+    @include flex(row,wrap,space-around,none);
+
+}
+
+.card_servicios_1{
+    background-image: (url("../asset/img/piso.jpg"));
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../asset/img/piso.jpg");
+}
+
+.card_servicios_2{
+    background-image: (url("../asset/img/s_1.jpg"));
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../asset/img/s_1.jpg");
+}
+
+.card_servicios_3{
+    background-image: (url("../asset/img/s_2.jpg"));
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../asset/img/s_2.jpg");
+}
+
+.card_servicios_4{
+    background-image: (url("../asset/img/s_3.jpg"));
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../asset/img/s_3.jpg");
+}
+
+.card_servicios_5{
+    background-image: (url("../asset/img/s_4.jpg"));
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../asset/img/s_4.jpg");
+}
+
+.card_servicios_6{
+    background-image: (url("../asset/img/s_5.jpg"));
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../asset/img/s_5.jpg");
+}
+.card_servicios_7{
+    background-image: (url("../asset/img/electrico.jpg"));
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../asset/img/electrico.jpg");
+}
+.card_servicios_8{
+    background-image: (url("../asset/img/s_6.jpg"));
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../asset/img/s_6.jpg");
+}
+.card_servicios_9{
+    background-image: (url("../asset/img/s_7.jpg"));
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../asset/img/s_7.jpg");
+}
+.card_servicios_10{
+    background-image: (url("../asset/img/s_8.jpg"));
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../asset/img/s_8.jpg");
+}
