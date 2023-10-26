@@ -12,7 +12,7 @@
             max-width: 100%;
         }
         article{
-            @include flex(row,nowrap,none,none);
+            @include flex(column,wrap,center,center);
         }
         .contenedor_nosotros{
             flex-direction: row;

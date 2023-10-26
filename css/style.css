@@ -680,7 +680,7 @@ footer .logo_footer img {
 .nosotros article .contenedor_nosotros {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   width: 100%;
@@ -925,10 +925,10 @@ footer .logo_footer img {
   }
   .nosotros article {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: none;
-    align-items: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
   .nosotros .contenedor_nosotros {
     flex-direction: row;

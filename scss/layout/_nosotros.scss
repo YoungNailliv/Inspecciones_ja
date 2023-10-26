@@ -12,7 +12,7 @@
         @include flex(column,wrap,center,center);
         gap: .9375rem;
         .contenedor_nosotros{
-            @include flex(row,nowrap,space-around,center);
+            @include flex(row,wrap,space-around,center);
             width: 100%;
             .texto_nosotros{
                 border-bottom: 2px solid $color-principal;
