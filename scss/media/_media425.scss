@@ -7,7 +7,7 @@
     
     .foto_carrusel{
         h3{
-            font-size: 28px;
+            font-size: 24px;
         }
         p{
             font-size: 16px;
@@ -16,11 +16,15 @@
     }
     .logo_banner{
         width: 50px;
+        display: none;
     }
 
     .texto_carrusel{
         h3{
-            font-size: 24px;
+            font-size: 20px;
+        }
+        p{
+            font-size: 12px;
         }
     }
 

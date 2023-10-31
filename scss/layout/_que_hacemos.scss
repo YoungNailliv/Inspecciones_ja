@@ -17,7 +17,7 @@
 
 .card_hacemos{
     @include flex(row,nowrap,center,center);
-    border: 5px solid $color-tres;
+    border: 5px solid $color-secundario;
     height: 180px;
     
     color: $color-tres;

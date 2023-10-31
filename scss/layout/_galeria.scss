@@ -3,6 +3,7 @@
     margin-bottom: 30px;
     h1{
         text-align: center;
+        margin-top: 50px
     }
     .fila{
         @include flex (row,wrap,center,none);

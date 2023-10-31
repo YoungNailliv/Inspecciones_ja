@@ -1,7 +1,10 @@
 .navbar{
     width: 100%;
+    background-color: $color-secundario;
+    box-shadow: 0px 1px 10px black;
     div{
         a{
+            font-size: 16px;
             @include flex(row,nowrap,center,center);
             img{
                 width: 4.6875rem;
