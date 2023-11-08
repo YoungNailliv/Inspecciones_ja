@@ -443,6 +443,9 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
+  background-image: url("../asset/img/background_05.jpg");
+  background-size: cover;
+  padding-bottom: 20px;
 }
 .que_hacemos h1 {
   font-family: "Roboto Condensed", sans-serif;
@@ -450,6 +453,7 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   font-weight: 700;
+  color: white;
 }
 .que_hacemos .contenedor_hacemos {
   margin-bottom: 50px;
@@ -461,7 +465,6 @@ body {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  border: 5px solid whitesmoke;
   height: 180px;
   color: white;
   font-weight: 700;
@@ -550,6 +553,12 @@ body {
   align-items: center;
   gap: 25px;
   margin-bottom: 40px;
+  background-image: url("../asset/img/background_04.jpg");
+  background-size: cover;
+  padding-top: 15px;
+  padding-right: 0px;
+  padding-bottom: 15px;
+  padding-left: 0px;
 }
 .galeria_index h1 {
   font-family: "Roboto Condensed", sans-serif;
@@ -712,6 +721,32 @@ footer .logo_footer img {
   width: 300px;
 }
 
+.body_galeria {
+  background-image: url("../asset/img/background_04.jpg");
+  background-size: cover;
+}
+
+.card_galeria {
+  height: auto;
+  background-color: white;
+  transition-duration: 0.5s;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid black;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.card_galeria:hover {
+  box-shadow: -5px 5px 0px black;
+  border-radius: 10px;
+  border: none;
+  transform: scale(1.1);
+}
+
 .galeria {
   font-family: "Roboto Condensed", sans-serif;
   margin-bottom: 30px;
@@ -726,6 +761,7 @@ footer .logo_footer img {
   flex-wrap: wrap;
   justify-content: center;
   align-items: none;
+  gap: 1.875rem;
 }
 .galeria .fila figure {
   margin: 20px;
@@ -733,12 +769,6 @@ footer .logo_footer img {
 }
 .galeria .fila figure img {
   width: 100%;
-  transition-duration: 0.5s;
-}
-.galeria .fila figure img:hover {
-  box-shadow: 0px 0px 5px black;
-  border-radius: 10px;
-  transform: scale(1.2);
 }
 
 .contacto {

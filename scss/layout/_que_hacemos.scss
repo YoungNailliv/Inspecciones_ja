@@ -1,12 +1,17 @@
 .que_hacemos{
     @include flex (column,nowrap,center,center);
     gap: .625rem;
+    background-image: url("../asset/img/background_05.jpg");
+    background-size: cover;
+    
+    padding-bottom: 20px;
     h1{
         font-family: $font-main;
         text-align: center;
         margin-top: 20px;
         margin-bottom: 20px;
         font-weight: 700;
+        color: white;
 
     }
     .contenedor_hacemos{
@@ -17,7 +22,6 @@
 
 .card_hacemos{
     @include flex(row,nowrap,center,center);
-    border: 5px solid $color-secundario;
     height: 180px;
     
     color: $color-tres;

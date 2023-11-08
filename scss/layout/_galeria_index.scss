@@ -2,7 +2,9 @@
     @include flex(column,wrap,center,center);
     gap: 25px;
     margin-bottom: 40px;
-    
+    background-image: url("../asset/img/background_04.jpg");
+    background-size: cover;
+    @include padding(15px,0px,15px,0px);
     h1{
         font-family: $font-main;text-align: center;
         margin-bottom: 50px ;
