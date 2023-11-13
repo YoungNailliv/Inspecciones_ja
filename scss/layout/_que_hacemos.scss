@@ -1,8 +1,9 @@
 .que_hacemos{
     @include flex (column,nowrap,center,center);
     gap: .625rem;
-    background-image: url("../asset/img/background_05.jpg");
+    background-image: url("../asset/img/background_04.jpg");
     background-size: cover;
+    background-color: $color-principal;
     
     padding-bottom: 20px;
     h1{
@@ -11,7 +12,7 @@
         margin-top: 20px;
         margin-bottom: 20px;
         font-weight: 700;
-        color: white;
+        color: $color-principal;
 
     }
     .contenedor_hacemos{
@@ -23,14 +24,15 @@
 .card_hacemos{
     @include flex(row,nowrap,center,center);
     height: 180px;
-    
+    // border: 10px solid $color-secundario;   
     color: $color-tres;
     font-weight: 700;
     text-shadow: -1px 1px 0px $color-principal;
     font-family: $font-main;
     text-align: center;
     margin-bottom: 10px;
-    
+    box-shadow: 0px 0px 2px $color-principal;
+    gap: .625rem;
 }
 
 .card_hacemos_1{

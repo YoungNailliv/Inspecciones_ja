@@ -443,8 +443,9 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
-  background-image: url("../asset/img/background_05.jpg");
+  background-image: url("../asset/img/background_04.jpg");
   background-size: cover;
+  background-color: black;
   padding-bottom: 20px;
 }
 .que_hacemos h1 {
@@ -453,7 +454,7 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   font-weight: 700;
-  color: white;
+  color: black;
 }
 .que_hacemos .contenedor_hacemos {
   margin-bottom: 50px;
@@ -472,6 +473,8 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   text-align: center;
   margin-bottom: 10px;
+  box-shadow: 0px 0px 2px black;
+  gap: 0.625rem;
 }
 
 .card_hacemos_1, .card_hacemos_4, .card_hacemos_3, .card_hacemos_2 {
@@ -519,7 +522,7 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   height: 320px;
   width: 200px;
-  border: 1px solid gray;
+  border: 1px solid rgb(181, 178, 178);
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -588,22 +591,22 @@ body {
 }
 
 .foto_galeria_1 {
-  background-image: url("../asset/img/foto_galeria_index1.jpg");
+  background-image: url("../asset/img/despues_01.jpeg");
   background-size: cover;
 }
 
 .foto_galeria_2 {
-  background-image: url("../asset/img/foto_galeria_index2.jpg");
+  background-image: url("../asset/img/despues_02.jpeg");
   background-size: cover;
 }
 
 .foto_galeria_3 {
-  background-image: url("../asset/img/foto_galeria_index3.jpg");
+  background-image: url("../asset/img/despues_03.jpeg");
   background-size: cover;
 }
 
 .foto_galeria_4 {
-  background-image: url("../asset/img/foto_galeria_index4.jpg");
+  background-image: url("../asset/img/despues_04.jpeg");
   background-size: cover;
 }
 
@@ -635,7 +638,7 @@ body {
 }
 
 footer {
-  background-color: gray;
+  background-color: rgb(181, 178, 178);
   font-family: "Roboto Condensed", sans-serif;
   height: 100%;
   display: flex;
@@ -728,23 +731,43 @@ footer .logo_footer img {
 
 .card_galeria {
   height: auto;
+  width: 500px;
   background-color: white;
-  transition-duration: 0.5s;
   border-radius: 10px;
-  text-align: center;
   border: 1px solid black;
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-}
-.card_galeria:hover {
   box-shadow: -5px 5px 0px black;
-  border-radius: 10px;
-  border: none;
-  transform: scale(1.1);
+}
+.card_galeria nav {
+  margin-top: 5px;
+  --bs-nav-link-color: black;
+}
+.card_galeria nav button {
+  margin-top: 0px;
+  margin-right: 5px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  color: black;
+}
+.card_galeria nav button:hover {
+  color: black;
+}
+.card_galeria nav .nav-pills {
+  color: black;
+  --bs-nav-pills-link-active-color: white;
+  --bs-nav-pills-link-active-bg: black;
+}
+
+.contenido_card img {
+  width: 100%;
+  border-radius: 20px;
+  max-height: 300px;
+  box-shadow: -1px 1px 5px black;
 }
 
 .galeria {
@@ -760,7 +783,7 @@ footer .logo_footer img {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: none;
+  align-items: center;
   gap: 1.875rem;
 }
 .galeria .fila figure {
@@ -769,6 +792,15 @@ footer .logo_footer img {
 }
 .galeria .fila figure img {
   width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px black;
+}
+.galeria h3 {
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
 }
 
 .contacto {
@@ -789,7 +821,7 @@ footer .logo_footer img {
 }
 .contacto .formulario {
   padding: 20px;
-  border: 1px solid gray;
+  border: 1px solid rgb(181, 178, 178);
   box-shadow: -5px 5px 0px black;
   border-radius: 15px;
 }

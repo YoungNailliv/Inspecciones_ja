@@ -5,20 +5,39 @@
 
 
 .card_galeria{
-    height: auto;
+    height: auto    ;
+    width: 500px;
     background-color: white;
-    transition-duration: 0.5s;
     border-radius: 10px;
-    text-align: center;
     border: 1px solid $color-principal;
     margin-bottom: 30px;
-    @include flex(column,wrap,center,center);   
-    &:hover{
-        box-shadow: -5px 5px 0px $color-principal;
-        border-radius: 10px;
-        border: none;
-        transform: scale(1.1);
+    @include flex(column,wrap,space-evenly,center);
+    box-shadow: -5px 5px 0px $color-principal;
+    nav{
+        margin-top: 5px;
+        --bs-nav-link-color: black;
+        button{
+            @include margin(0px,5px,0px,5px);
+            color: black;
+            &:hover{
+                color: black;
+            }
+        }
+        .nav-pills{
+            color: black;
+            --bs-nav-pills-link-active-color: white;
+            --bs-nav-pills-link-active-bg: black;
+        }
+    }
 
+}
+
+.contenido_card{
+    img{
+        width: 100%;
+        border-radius: 20px;
+        max-height: 300px;
+        box-shadow: -1px 1px 5px black;
     }
 }
 
@@ -30,7 +49,7 @@
         margin-top: 50px
     }
     .fila{
-        @include flex (row,wrap,center,none);
+        @include flex (row,wrap,center,center);
         gap: 1.875rem;
 
         figure{
@@ -38,8 +57,13 @@
             width: 300px;
             img{
                 width: 100%;
+                border-radius: 20px;
+                box-shadow: 0px 0px 5px $color-principal;
             }
         }
     }
+    h3{
+        text-align: center;
+        @include margin(20px,0px,20px,0px);
+    }
 }
-
