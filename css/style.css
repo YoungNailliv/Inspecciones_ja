@@ -629,9 +629,9 @@ body {
   box-shadow: -5px 5px 0px black;
   border: 1px solid black;
   --bs-accordion-btn-color: black ;
-  --bs-accordion-bg: white ;
+  --bs-accordion-bg: white;
   --bs-accordion-btn-active-bg: white ;
-  --bs-accordion-btnn-active-color:white ;
+  --bs-accordion-btn-active-color:white ;
   --bs-accordion-btn-focus-border-color: white;
   --bs-accordion-active-bg: black;
   --bs-accordion-active-color:white;
@@ -831,6 +831,7 @@ footer .logo_footer img {
 }
 .contacto .mensaje input {
   height: 200px;
+  width: 300px;
 }
 .contacto h2 {
   text-align: center;
