@@ -386,7 +386,7 @@ body {
   width: 100%;
   margin-bottom: 10px;
 }
-.cuando_solicitar h1 {
+.cuando_solicitar h1, .cuando_solicitar .valoraciones h2, .valoraciones .cuando_solicitar h2 {
   margin-top: 10px;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
@@ -448,7 +448,7 @@ body {
   background-color: black;
   padding-bottom: 20px;
 }
-.que_hacemos h1 {
+.que_hacemos h1, .que_hacemos .valoraciones h2, .valoraciones .que_hacemos h2 {
   font-family: "Roboto Condensed", sans-serif;
   text-align: center;
   margin-top: 20px;
@@ -502,13 +502,12 @@ body {
   margin-top: 40px;
   overflow: hidden;
 }
-.valoraciones h1 {
+.valoraciones h1, .valoraciones h2 {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
-
 .valoraciones_cards {
   display: flex;
   flex-direction: row;
@@ -520,32 +519,32 @@ body {
 
 .contenedor_valoracion {
   font-family: "Roboto Condensed", sans-serif;
-  height: 320px;
-  width: 200px;
+  width: 350px;
   border: 1px solid rgb(181, 178, 178);
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 50px;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  margin-bottom: 30px;
   border-radius: 10px;
   transition-duration: 0.5s;
   background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.contenedor_valoracion q {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.contenedor_valoracion h4, .contenedor_valoracion h5, .contenedor_valoracion div {
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .contenedor_valoracion:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
   box-shadow: -5px 5px 0px black;
-}
-.contenedor_valoracion .marco_valo {
-  height: 150px;
-  width: 150px;
-  border-radius: 999999px;
-  margin-bottom: 10px;
-}
-.contenedor_valoracion .marco_valo img {
-  border-radius: 999999px;
 }
 
 .galeria_index {
@@ -563,7 +562,7 @@ body {
   padding-bottom: 15px;
   padding-left: 0px;
 }
-.galeria_index h1 {
+.galeria_index h1, .galeria_index .valoraciones h2, .valoraciones .galeria_index h2 {
   font-family: "Roboto Condensed", sans-serif;
   text-align: center;
   margin-bottom: 50px;
@@ -774,7 +773,7 @@ footer .logo_footer img {
   font-family: "Roboto Condensed", sans-serif;
   margin-bottom: 30px;
 }
-.galeria h1 {
+.galeria h1, .galeria .valoraciones h2, .valoraciones .galeria h2 {
   text-align: center;
   margin-top: 50px;
 }
@@ -815,7 +814,7 @@ footer .logo_footer img {
   margin-left: 0px;
   font-family: "Roboto Condensed", sans-serif;
 }
-.contacto h1 {
+.contacto h1, .contacto .valoraciones h2, .valoraciones .contacto h2 {
   text-align: center;
   margin-bottom: 30px;
 }
@@ -864,7 +863,7 @@ footer .logo_footer img {
   font-family: "Roboto Condensed", sans-serif;
   text-align: center;
 }
-.main_servicios h1 {
+.main_servicios h1, .main_servicios .valoraciones h2, .valoraciones .main_servicios h2 {
   margin-top: 30px;
   margin-right: 0px;
   margin-bottom: 30px;
@@ -1079,6 +1078,17 @@ footer .logo_footer img {
   }
   .acordeon {
     width: 100%;
+  }
+  .contenedor_valoracion {
+    width: 100%;
+  }
+  q {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  h4, h5, div {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 

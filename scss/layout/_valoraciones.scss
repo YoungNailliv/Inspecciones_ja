@@ -6,39 +6,44 @@
         font-family: $font-main;
         font-weight: 700;
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+    }
+    h2{
+        @extend h1;
     }
 }
 
 .valoraciones_cards{
     @include flex(row,wrap,center,center);
     gap: 1.25rem;
+    
 }
 
 .contenedor_valoracion{
     font-family: $font-main;
-    height: 320px;
-    width: 200px;
+    width: 350px;
     border: 1px solid $color-cuatro;
-    @include flex(column,nowrap,center,center);
-    text-align: center;
-    margin-bottom: 50px;
+    @include flex(column,nowrap,left,left);
+    text-align: left;
+    margin-bottom: 30px;
     border-radius: 10px;
     transition-duration: 0.5s;
     background-color: $color-tres;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    q{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    h4,h5,div{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
 
     &:hover{
-        transform: scale(1.1);
+        transform: scale(1.02);
         box-shadow: -5px 5px 0px $color-principal
     }
 
-    .marco_valo{
-        img{
-            border-radius: 999999px;
-        }
-        height: 150px;
-        width: 150px;
-        border-radius: 999999px;
-        margin-bottom: 10px;
-    }
 }
