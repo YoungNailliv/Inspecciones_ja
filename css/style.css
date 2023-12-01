@@ -875,16 +875,20 @@ footer .logo_footer img {
   margin-right: 50px;
   margin-bottom: 0px;
   margin-left: 50px;
+  text-align: left;
+}
+.main_servicios .no {
+  text-align: center;
 }
 
 .card_servicios {
-  width: 400px;
+  width: 250px;
   height: 200px;
   margin: 0;
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -903,14 +907,24 @@ footer .logo_footer img {
 .card_servicios div h5 {
   text-align: center;
   margin-top: 0px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+}
+.card_servicios div ul {
+  list-style: circle;
+  padding: 0;
+  margin-top: 25px;
+  margin-top: 20px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  margin-left: 100px;
+}
+.card_servicios div ul li {
+  margin-top: 0px;
   margin-right: 10px;
   margin-bottom: 0px;
   margin-left: 10px;
-}
-.card_servicios div ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 .card_servicios:hover {
   box-shadow: 0px 0px 5px black;
@@ -924,7 +938,7 @@ footer .logo_footer img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: none;
 }
 
@@ -932,6 +946,7 @@ footer .logo_footer img {
   background-image: url("../asset/img/piso.jpg");
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../asset/img/piso.jpg");
+  transition-duration: 0.2s;
 }
 
 .card_servicios_2 {
